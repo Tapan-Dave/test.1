@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="quantity-btn">
+        <button class="btn1" onclick="decrement(potatoes)"> - </button>
+        <h3 id="potatoes-quantity">0</h3>
+        <button class="btn2" onclick="increment(potatoes)"> + </button>
+    </div>
+    <div class="quantity-btn">
+        <button class="btn1" onclick="decrement(tomatoes)"> - </button>
+        <h3 id="potatoes-quantity">0</h3>
+        <button class="btn2" onclick="increment('tapan bhoi')"> + </button>
+    </div>
+
+<!-- 
+
+function definition:
+
+function funcName(funcParam1, funcParam2, funcParam3, ..., funcPraramN) {
+    // function body
+}
+
+function call (function no use):
+
+funcName(paramValue1, paramValue2, ....);
+
+
+ -->
+
+    <script>
+        var potatoes = "potatoes";
+        var potatoesQuantity = 0;
+
+        function decrement(vegitables){
+            if(product == potatoes && potatoesQuantity > 0){
+                potatoesQuantity = potatoesQuantity - 1;
+                document.getElementById("potatoes-quantity").innerText = potatoesQuantity;
+            }
+        }
+
+        function increment(vegetables){
+            if(product == potatoes){
+                potatoesQuantity = potatoesQuantity + 1;
+                document.getElementById("potatoes-quantity").innerText = potatoesQuantity;
+            }
+        }
+    </script>
+</body>
+</html>

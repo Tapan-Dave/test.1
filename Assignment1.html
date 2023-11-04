@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thefoodplace.com</title>
+   <link rel="stylesheet" href="style.css">
+    <script src="script.js" async></script>
+    
+</head>
+<body>
+    <h1>The Grocery Market</h1>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="images/LOGO2.jpg" alt="vegitables " height="100px">
+        </div>
+        <ul>
+            <li class="class"><a href="">Inventory</a></li>
+            <li class="class"><a href="">Check orders</a></li>
+            <li class="class"><a href="">Services</a></li>
+            <li class="class"><a href="">Contact us</a></li>
+            <li class="class"><a href="">Customer Feedback </a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primary">Welcome to my Grocery store</h1>
+        <p>New Location 
+            122 Lexington Rd. guelph<br>
+            Come Visit us 
+            Monday - Saturday
+            Pickups & In-store shopping.<br>
+        </p>
+        <p>All our produce & products are locally sourced when available 
+            from farmers and producers in the region.</p>
+        
+         <button class="btn">Order now</button>
+    
+
+
+    </section>
+
+    <section class="services-container">
+        <h1 class="h1-primary center">Our vegetables</h1>
+        <div id="services">
+            <div class="box">
+                <img src="./images/pepper.jpg" alt="pepper">
+                <h2 class="h-secondary center"> Red pepper</h2>
+                <span class="veg">$5.50 /per.Kg</span>
+                <button class="shop-btn button" type="button">
+                    YOUR CART
+                </button>
+                <div class="quantity-btn">
+                    <button class="btn1" onclick="decrement(redPepper)"> - </button>
+                    <h3 id="red-pepper-quantity">0</h3>
+                    <button class="btn2" onclick="increment(redPepper)"> + </button>
+                </div>
+            </div>
+
+                
+            
+
+            <div class="box">
+                <img src="./images/potatoes.jpg" alt="potatoes">
+                <h2 class="h-secondary center"> Potatoes</h2>
+                <span class="veg">$4.50 /per.Kg</span>
+                <button class="shop-btn button" type="button">
+                    YOUR CART
+                </button>
+                <div class="quantity-btn">
+                    <button class="btn1" onclick="decrement(potatoes)"> - </button>
+                    <h3 id="potatoes-quantity">0</h3>
+                    <button class="btn2" onclick="increment(potatoes)"> + </button>
+                </div>
+            </div>
+
+
+
+            <div class="box">
+                <img src="./images/scallions.jpg" alt="scallions">
+                <h2 class="h-secondary center"> Scallions</h2>
+                <span class="veg">$3.50 /per.Kg</span>
+                <button class="shop-btn button" type="button">
+                    YOUR CART
+                </button>
+                <div class="quantity-btn">
+                    <button class="btn1" onclick="decrement(scallions)"> - </button>
+                    <h3 id="scallions-quantity">0</h3>
+                    <button class="btn2" onclick="increment(scallions)"> + </button>
+                </div>
+            </div>
+
+
+
+
+            <div class="box">
+                <img src="./images/tomatoes.jpg" alt="tomatoes">
+                <h2 class="h-secondary center"> Tomatoes</h2>
+                <span class="veg">$2.50 /per.Kg</span>
+                <button class="shop-btn button" type="button">
+                    YOUR CART
+                </button>
+                <div class="quantity-btn">
+                    <button class="btn1" onclick="decrement(tomatoes)"> - </button>
+                    <h3 id="tomatoes-quantity">0</h3>
+                    <button class="btn2" onclick="increment(tomatoes)"> + </button>
+                </div>
+            </div>
+
+
+
+            <div class="box">
+                <img src="./images/broccoli.jpg" alt="broccoli">
+                <h2 class="h-secondary center"> Broccoli</h2>
+                <span class="veg">$1.50 /per.Kg</span>
+                <button class="shop-btn button" type="button">
+                    YOUR CART
+                </button>
+                <div class="quantity-btn">
+                    <button class="btn1" onclick="decrement(broccoli)"> - </button>
+                    <h3 id="broccoli-quantity">0</h3>
+                    <button class="btn2" onclick="increment(broccoli)"> + </button>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+    <section class="services-container">
+        <h1 class="h2-primary center">Our Fruits</h1>
+        <div id="services">
+            <div class="box">
+                <img src="./images/Banana.jpg" alt="Banana">
+                <h2 class="h-secondary center"> Banana</h2>
+                <span class="veg">$5.50 /per.Kg</span>
+                <button class="shop-btn button" type="button">
+                    YOUR CART
+                </button>
+                <div class="quantity-btn">
+                    <button class="btn1" onclick="decrement(banana)"> - </button>
+                    <h3 id="banana-quantity">0</h3>
+                    <button class="btn2" onclick="increment(banana)"> + </button>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <img src="./images/Berries.jpg" alt="Berries">
+                <h2 class="h-secondary center"> Berries</h2>
+                <span class="veg">$4.50 /per.Kg</span>
+                <button class="shop-btn button" type="button">
+                    YOUR CART
+                </button>
+                <div class="quantity-btn">
+                    <button class="btn1" onclick="decrement(berries)"> - </button>
+                    <h3 id="berries-quantity">0</h3>
+                    <button class="btn2" onclick="increment(berries)"> + </button>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <img src="./images/Mango.jpg" alt="Mango">
+                <h2 class="h-secondary center"> Mango</h2>
+                <span class="veg">$3.50/per.Kg</span>
+                <button class="shop-btn button" type="button">
+                    YOUR CART
+                </button>
+                <div class="quantity-btn">
+                    <button class="btn1" onclick="decrement(mango)"> - </button>
+                    <h3 id="mango-quantity">0</h3>
+                    <button class="btn2" onclick="increment(mango)"> + </button>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <img src="./images/Blue berry.jpg" alt="Blueberry">
+                <h2 class="h-secondary center"> Blue berry</h2>
+                <span class="veg">$2.50/per.Kg</span>
+                <button class="shop-btn button" type="button">
+                    YOUR CART
+                </button>
+                <div class="quantity-btn">
+                    <button class="btn1" onclick="decrement(blueberry)"> - </button>
+                    <h3 id="blueberry-quantity">0</h3>
+                    <button class="btn2" onclick="increment(blueberry)"> + </button>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <img src="./images/orange.jpg" alt="orange">
+                <h2 class="h-secondary center"> orange</h2>
+                <span class="veg">$1.50 /per.Kg</span>
+                <button class="shop-btn button" type="button">
+                    YOUR CART
+                </button>
+                <div class="quantity-btn">
+                     <button class="btn1" onclick="decrement(orange)"> - </button>
+                    <h3 id="orange-quantity">0</h3>
+                    <button class="btn2" onclick="increment(orange)"> + </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<button class="checkout-btn" onclick="checkout()" type="button">
+    <b>CHECK OUT BUTTON
+</button>
+
+<table id="bill">
+    <tr>
+        <td>Name</td>
+        <td id="name"></td>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Product Name</td>
+        <td>quantity</td>
+        <td>Cost</td>
+        <td>Product Cost</td>
+    </tr>
+    <tbody id="bill-body">
+        <tr></tr>
+        <tr></tr>
+    </tbody>
+    
+    <!-- <tr>
+        <td>Red pepper</td>
+        <td></td>
+        <td>$5.50</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>potatoes</td>
+        <td></td>
+        <td>$4.50</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Scallions</td>
+        <td></td>
+        <td>$3.50</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Tomatoes</td>
+        <td></td>
+        <td>$2.50</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Broccoli</td>
+        <td></td>
+        <td>$1.50</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Banana</td>
+        <td></td>
+        <td>$5.50</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Berries</td>
+        <td></td>
+        <td>$4.50</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Mango</td>
+        <td></td>
+        <td>$3.50</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Blueberry</td>
+        <td></td>
+        <td>$2.50</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>orange</td>
+        <td></td>
+        <td>$1.50</td>
+        <td></td>
+    </tr> -->
+    <tfoot>
+
+        <tr>
+            <td>Sub Total</td>
+            <td id="sub-total-quantity"></td>
+            <td></td>
+            <td id="sub-total-cost"></td>
+        </tr>
+        <tr>
+            <td>GST</td>
+            <td></td>
+            <td>13%</td>
+            <td id="gst"></td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td></td>
+            <td></td>
+            <td id="total"></td>
+        </tr>
+    </tfoot>
+
+
+</table>
+
+    <section id="contact-us">
+        <h1 class="h3-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="name">Email:</label>
+                    <input type="email" name="name" id="name" placeholder="Enter your Email">
+                </div>
+                <div class="form-group">
+                    <label for="name">Phone:</label>
+                    <input type="phone" name="name" id="name" placeholder="Enter your Phone number">
+                </div>
+                <div class="form-group">
+                    <label for="name">message:</label>
+                    <textarea name="message" id="message" cols="20" role="20" placeholder="feedback"></textarea>
+                </div>
+                    
+            </form>
+        </div>
+    </section>
+    
+
+        <footer>
+            <div class="center">
+            <a href="Thefoodplace.com">copyrite &copy;Thefoodplace.com !All rights reserved!</a>    
+            </div>
+        </footer>
+            
+
+
+
+   
+        
+
+            
+        
+        
+
+
+    
+</body>
+</html>
